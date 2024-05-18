@@ -18,3 +18,14 @@ const doubledNumbers = numbers.map(double);
 
 // Imprimir el array resultante usando console.table
 console.table(doubledNumbers); // [2, 4, 6, 8, 10]
+
+
+// Se crea un array de ejemplo llamado numbers que contiene los números del 1 al 5.
+// Se define una función llamada double que acepta un número como argumento y devuelve el doble de ese número.
+// Se utiliza la función map para aplicar la función double a cada elemento del array numbers. Esto significa que cada 
+// número en el array original será pasado como argumento a la función double, y el resultado de cada llamada se
+// almacenará en un nuevo array llamado doubledNumbers.
+// Se imprime el array resultante usando console.table, que mostrará los números duplicados en forma de tabla en la 
+// consola del navegador.
+// Entonces, el resultado final que se imprimirá en la consola será [2, 4, 6, 8, 10], que son los números originales del
+// 1 al 5, pero cada uno duplicado.
