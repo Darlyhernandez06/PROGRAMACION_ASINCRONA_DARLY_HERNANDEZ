@@ -6,7 +6,7 @@ const promesaRechazada = new Promise((resolve, reject) => {
     // Se define una nueva promesa con el constructor Promise, que recibe una función de inicialización con los parámetros resolve y reject.
     setTimeout(() => {
         // Se establece un temporizador que ejecutará la función de rechazo después de 2000 milisegundos (2 segundos).
-        reject("¡Error: Promise rechazada!");
+        reject("¡Error: Promise rechazada después de 2 segundos!");
         // La función reject se invoca con el mensaje "Error: Promise rechazada".
     }, 2000);
 });
