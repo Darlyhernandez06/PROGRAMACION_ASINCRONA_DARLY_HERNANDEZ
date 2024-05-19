@@ -22,13 +22,13 @@ console.table(numerosPares); // Salida: [8, 10, 12, 20]
 // que pasan cierto criterio especificado en una función de callback. Aquí hay una explicación paso a paso de lo que 
 // hace el método `filter`:
 
-// 1. Iteración: Comienza iterando sobre cada elemento del array original.
-// 2. Callback: Para cada elemento del array, ejecuta una función de callback proporcionada como argumento.
-// 3. Condición: La función de callback devuelve `true` o `false` basada en una condición específica que se evalúa
+// Iteración: Comienza iterando sobre cada elemento del array original.
+// Callback: Para cada elemento del array, ejecuta una función de callback proporcionada como argumento.
+// Condición: La función de callback devuelve `true` o `false` basada en una condición específica que se evalúa
 // para cada elemento.
-// 4. Filtrado: Si la función de callback devuelve `true` para un elemento específico, ese elemento se agrega al nuevo
+// Filtrado: Si la función de callback devuelve `true` para un elemento específico, ese elemento se agrega al nuevo
 // array resultante.
-// 5. Nuevo array: Finalmente, `filter` devuelve un nuevo array que contiene solo los elementos para los cuales la 
+// Nuevo array: Finalmente, `filter` devuelve un nuevo array que contiene solo los elementos para los cuales la 
 // función de callback devolvió `true`.
 
 // En resumen, `filter` permite filtrar elementos de un array según un criterio específico definido por una función de 
