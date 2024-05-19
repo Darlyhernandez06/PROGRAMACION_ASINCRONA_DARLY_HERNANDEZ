@@ -2,6 +2,20 @@
 // • por cada elemento del array ejecute el callback pasándole dicho elemento como argumento
 // • devuelva true si al menos una de las llamadas al callback devolvió true
 
+// Definir la función some que acepta un array y un callback
+function some(array, callback) {
+    // Iterar sobre cada elemento del array
+    for (let i = 0; i < array.length; i++) {
+        // Ejecutar el callback para cada elemento
+        // Si el callback devuelve true, devolver true
+        if (callback(array[i])) {
+            return true;
+        }
+    }
+    // Si el callback no devuelve true para ningún elemento, devolver false
+    return false;
+}
+
 // Definir un array de ejemplo
 const numbers = [1, 3, 5, 8, 9];
 
@@ -10,26 +24,22 @@ function esPar(numero) {
     return numero % 2 === 0;
 }
 
-// Crear una función some que acepte un array y un callback
-function some(array, callback) {
-    // Iterar sobre cada elemento del array
-    for (let i = 0; i < array.length; i++) {
-        // Ejecutar el callback para cada elemento
-        if (callback(array[i])) {
-            // Si el callback devuelve true, devolver true
-            return true;
-        }
-    }
-    // Si el callback no devuelve true para ningún elemento, devolver false
-    return false;
-}
-
 // Usar la función some para verificar si al menos un número en el array es par
-const algunEsPar = some(numbers, esPar);
+const algunEsPar = numbers.some(esPar);
 
 // Imprimir el resultado en la consola
 console.log(algunEsPar); // Output: true (porque 8 es par)
 
+
+// En esta parte del código se define una función llamada some que acepta dos argumentos: un array y un callback.
+
+// Dentro de la función some, se itera sobre cada elemento del array utilizando un bucle for. En cada iteración,
+// se ejecuta el callback pasándole el elemento actual del array como argumento. Si el callback devuelve true para 
+// algún elemento del array, la función some devuelve true, indicando que al menos un elemento del array satisface 
+// la condición especificada en el callback.
+
+// Si el callback no devuelve true para ningún elemento del array, la función some devuelve false, indicando que
+// ninguno de los elementos del array satisface la condición especificada en el callback.
 
 // Definición del Array de Ejemplo: Se crea un array llamado numbers que contiene una serie de números.
 
