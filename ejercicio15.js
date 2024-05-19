@@ -3,17 +3,19 @@
 
 // Crear una promesa que se rechace después de 2 segundos
 const promesaRechazada = new Promise((resolve, reject) => {
-    // Dentro de la función de inicialización de la promesa, configurar un temporizador que se ejecute después de 2000 milisegundos (2 segundos)
+    // Se define una nueva promesa con el constructor Promise, que recibe una función de inicialización con los parámetros resolve y reject.
     setTimeout(() => {
-        // Al cumplirse el temporizador, llamar al método reject de la promesa y pasar el mensaje "¡Error: Promise rechazada después de 2 segundos!"
-        reject("¡Error: Promise rechazada después de 2 segundos!");
+        // Se establece un temporizador que ejecutará la función de rechazo después de 2000 milisegundos (2 segundos).
+        reject("¡Error: Promise rechazada!");
+        // La función reject se invoca con el mensaje "Error: Promise rechazada".
     }, 2000);
 });
 
 // Capturar el error utilizando el método catch
 promesaRechazada.catch(error => {
-    // Dentro del bloque catch, imprimir el mensaje de error en la consola
-    console.log(error); // Imprimir el mensaje de error
+    // Se llama al método catch de la promesa promesaRechazada para manejar cualquier error que ocurra durante la ejecución de la promesa.
+    console.log(error); // Imprimir el mensaje de error en la consola
+    // Se imprime el mensaje de error en la consola.
 });
 
 
