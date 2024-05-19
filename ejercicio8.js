@@ -32,11 +32,11 @@ function esIgualAKiwi(palabra) {
 
 // Usar la función findIndex para encontrar el índice de la primera palabra con exactamente 6 letras
 const indice1 = palabras.findIndex(tieneExactamenteSeisLetras);
-console.log(indice1); // Output: 1 (índice de la palabra "banana")
+console.log(indice1 !== -1 ? indice1 : undefined); // Output: 1 (índice de la palabra "banana")
 
 // Usar la función findIndex para encontrar el índice de la palabra "kiwi" en el array
 const indice2 = palabras.findIndex(esIgualAKiwi);
-console.log(indice2); // Output: -1 (no se encontró la palabra "kiwi")
+console.log(indice2 !== -1 ? indice2 : undefined); // Output: undefined (no se encontró la palabra "kiwi")
 
 
 // En este código se define una función findIndex que acepta un array y un callback y devuelve el índice del primer
@@ -55,3 +55,17 @@ console.log(indice2); // Output: -1 (no se encontró la palabra "kiwi")
 // tenga exactamente 6 letras (usando el callback tieneExactamenteSeisLetras) y para encontrar el índice de la palabra
 // "kiwi" en el array (usando el callback esIgualAKiwi). Los resultados se imprimen en la cons
 
+// const indice1 = palabras.findIndex(tieneExactamenteSeisLetras);: Aquí, estás usando la función findIndex para buscar
+// en el array palabras la primera palabra que cumple con la condición definida por la función de callback 
+// tieneExactamenteSeisLetras. Esta función de callback devuelve true si la longitud de una palabra es exactamente
+// 6 letras. findIndex buscará en el array y devolverá el índice de la primera palabra que cumpla con esta condición. El resultado se almacena en la variable indice1.
+
+// console.log(indice1 !== -1 ? indice1 : undefined);: Aquí estás imprimiendo el resultado de la búsqueda. Si findIndex 
+// encontró una palabra que cumple con la condición, devolverá su índice. Si no se encontró ninguna palabra que cumpla 
+// con la condición, findIndex devolverá -1. Por lo tanto, estás verificando si indice1 es diferente de -1. Si es 
+// diferente de -1, imprimes el índice encontrado. Si es igual a -1, imprimes undefined, lo que indica que no se 
+// encontró ninguna palabra que cumpla con la condición.
+
+// const indice2 = palabras.findIndex(esIgualAKiwi); y console.log(indice2 !== -1 ? indice2 : undefined);: Esto es 
+// similar al paso anterior, pero estás buscando la palabra "kiwi" en el array palabras. Si encuentra la palabra "kiwi",
+// imprimirá el índice de esa palabra. Si no, imprimirá undefined, indicando que la palabra "kiwi" no está en el array.
