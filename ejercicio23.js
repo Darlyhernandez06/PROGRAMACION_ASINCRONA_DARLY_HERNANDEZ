@@ -35,6 +35,7 @@ leerArchivoJson(rutaArchivo)
         }
     });
 
+
 // El ejercicio está pidiendo que realices una llamada a un archivo local en formato JSON y que manejes posibles 
 // errores utilizando try y catch para mostrar un mensaje de error en caso de que ocurra un fallo.
 
