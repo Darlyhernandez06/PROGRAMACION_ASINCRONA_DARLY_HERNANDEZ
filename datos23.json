@@ -1,0 +1,13 @@
+{
+    "nombre": "Darly Hernandez",
+    "edad": 18,
+    "correo": "darlyhernadez0624@gmail.com",
+    "telefono": "315-213-2954",
+    "direccion": {
+        "calle": "Calle 42 A #16-97 Rincon de Giron parte alta",
+        "numero": 3152132954,
+        "ciudad": "Bucaramanga",
+        "pais": "Colombia"
+    },
+    "hobbies": ["manualidades", "viajar", "diseñar"]
+}
