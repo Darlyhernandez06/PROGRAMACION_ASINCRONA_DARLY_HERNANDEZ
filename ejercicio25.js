@@ -55,7 +55,7 @@ const handler = {
                     return false; // Retorna false para indicar que la asignación no fue exitosa
                 }
                 break;
-            default:
+            default :
                 if (valor.trim() !== valor) { // Verifica si hay espacios en blanco al inicio o al final del valor
                     console.error(`Error: No se permiten espacios en blanco al inicio o al final de la propiedad ${propiedad}.`); // Muestra un mensaje de error si hay espacios en blanco al inicio o al final del valor
                     return false; // Retorna false para indicar que la asignación no fue exitosa
@@ -76,15 +76,15 @@ proxyObjeto.numero = 123; // Correcto: asigna un valor numérico a la propiedad 
 proxyObjeto.numero = 'abc'; // Error: debe ser un número
 proxyObjeto.alfanumerico = 'abc'; // Correcto: asigna un valor alfanumérico a la propiedad 'alfanumerico'
 proxyObjeto.alfanumerico = 'abc123'; // Error: debe contener solo letras
-proxyObjeto.email = 'correo@example.com'; // Correcto: asigna un valor de email válido a la propiedad 'email'
+proxyObjeto.email = 'correo@gmail.com'; // Correcto: asigna un valor de email válido a la propiedad 'email'
 proxyObjeto.email = 'correo'; // Error: debe ser un email válido
-proxyObjeto.fecha = '2022-01-01'; // Correcto: asigna una fecha válida a la propiedad 'fecha'
-proxyObjeto.fecha = '01/01/2022'; // Error: debe ser una fecha válida
+proxyObjeto.fecha = '2024-05-22'; // Correcto: asigna una fecha válida a la propiedad 'fecha'
+proxyObjeto.fecha = '22/05/2024'; // Error: debe ser una fecha válida
 proxyObjeto.espacios = ' prueba '; // Correcto: asigna un valor sin espacios al inicio o al final a la propiedad 'espacios'
 proxyObjeto.espacios = ' prueba  '; // Error: No se permiten espacios en blanco al inicio o al final
 
 // Mostrar el objeto final
-console.log(proxyObjeto); // Muestra el objeto proxy después de las asignaciones y validaciones
+console.table(proxyObjeto); // Muestra el objeto proxy después de las asignaciones y validaciones
 
 
 // El ejercicio está pidiendo que uses un proxy en JavaScript para validar los valores de las propiedades de un objeto

@@ -31,7 +31,7 @@ const numero= num => num < 3;
 const resultado = dropWhile(numbers, numero);
 
 // Imprimimos el resultado: [3, 4, 5]
-console.log(resultado);
+console.table(resultado);
 
 
 // El enunciado solicita crear una función llamada dropWhile que toma dos argumentos: un array y un callback. Esta 

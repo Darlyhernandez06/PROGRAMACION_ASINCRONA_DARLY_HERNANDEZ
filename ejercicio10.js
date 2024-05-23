@@ -36,7 +36,7 @@ function esPar(numero) {
 const resultado = takeWhile(numeros, esPar);
 
 // Imprimir el resultado: [2, 4, 6]
-console.log(resultado);
+console.table(resultado);
 
 
 // Este ejercicio solicita la creación de una función llamada takeWhile que acepte un array y un callback y que 
